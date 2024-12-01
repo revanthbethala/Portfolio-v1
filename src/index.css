@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Protest+Guerrilla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Parkinsans:wght@300..800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.li-style {
+  @apply tracking-wide text-lg font-semibold  hover:bg-white hover:text-cyan-800 py-1 px-2 rounded-lg ease-in delay-100 duration-300;
+}
+
+.heading {
+  @apply text-transparent text-center bg-clip-text bg-gradient-to-tr from-slate-200 to-slate-400 font-bold  text-4xl font-lora py-2;
+}
+
+.sub-container {
+  @apply px-5 py-3 bg-zinc-500  hover:bg-opacity-25 bg-opacity-30 border-2 border-slate-400 rounded-lg  font-Inter;
+}
+
+.skill-style {
+  @apply px-5 py-3 rounded-lg font-lora flex flex-col justify-center items-center  gap-3 cursor-pointer border-[1px] border-blue-600            hover:bg-gradient-to-tl hover:from-blue-600 hover:to-sky-900 drop-shadow-2xl ease-in duration-150  transition-all hover:border-none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
