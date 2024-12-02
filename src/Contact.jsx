@@ -14,8 +14,7 @@ export default function Contact() {
                duration: 2.2,
                ease: "easeOut",
             }}
-            whileHover={{ scale: 1.03 }}
-            viewport={{ once: true }}
+            gi viewport={{ once: true }}
             className="lg:w-1/2 text-justify space-y-4 p-4 rounded-lg items-center flex flex-col justify-center bg-gradient-to-l from-slate-600 to-slate-700 shadow-2xl border-2 border-teal-600">
             <p className="font-medium text-lg text-neutral-200 text-center">
                I&apos;m always open to new collaboration opportunities and connecting with like-minded professionals. If you have a project in mind, need assistance, or simply want to exchange ideas, feel free to reach out.
