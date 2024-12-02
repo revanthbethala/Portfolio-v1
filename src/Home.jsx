@@ -13,9 +13,9 @@ function Home() {
                whileInView={{ opacity: 1, translateY: 0 }}
                transition={{ ease: "easeIn", duration: 0.6, delay: 0.6 }}
             >
-               <h1
+               <h3
                   className="px-1 md:text-4xl text-3xl font-semibold text-center md:leading-relaxed leading-normal font-lora">Hello, I am Revanth <br />Passionate Front End Developer
-               </h1>
+               </h3>
                <p className="px-9 md:text-xl text-md text-gray-200 font-serif"> Focused on designing and developing web applications that are innovative and impactful. I aim to develop solutions that enhance user engagement</p>
                <div className="flex flex-row gap-4 items-center">
                   <motion.a
@@ -28,7 +28,6 @@ function Home() {
                      Let&apos;s Connect
                   </ContactButton>
                </div>
-
             </motion.div>
          </main>
 
