@@ -10,6 +10,7 @@ export default function Contact() {
             transition={{
                duration: 2.2,
                ease: "easeOut",
+               delay: 1
             }}
             viewport={{ once: true }}
             className="lg:w-1/2 text-justify space-y-4 p-4 rounded-lg items-center flex flex-col justify-center bg-gradient-to-l from-slate-600 to-slate-700 shadow-2xl border-2 border-teal-600">

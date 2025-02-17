@@ -23,7 +23,7 @@ function Home() {
                      whileHover={{ scale: 1.1 }}
                      transition={{ ease: "linear", duration: 0.2, delay: 0.12 }}
                      href="/Revanth.pdf" download="Revanth-Resume"
-                     className="bg-white border-2  hover:bg-transparent hover:text-white text-purple-600 px-3 py-2 rounded-lg font-Inter font-semibold text-base">Download Resume</motion.a>
+                     className="bg-white hover:bg-opacity-40 border-2  hover:bg-transparent hover:text-white text-purple-600 px-3 py-2 rounded-lg font-Inter font-semibold text-base">Download Resume</motion.a>
                   <ContactButton buttonStyle={" bg-transparent hover:bg-slate-50 hover:text-purple-600 text-white "} >
                      Let&apos;s Connect
                   </ContactButton>

@@ -17,7 +17,7 @@
 }
 
 .skill-style {
-  @apply px-5 py-3 rounded-lg font-lora flex flex-col justify-center items-center  gap-3 cursor-pointer border-[1px] border-blue-600            hover:bg-gradient-to-tl hover:from-blue-600 hover:to-sky-900 shadow-2xl;
+  @apply px-5 py-3 rounded-lg font-lora flex flex-col justify-center items-center  gap-3 cursor-pointer border-[1px] border-blue-600            hover:bg-gradient-to-tl hover:from-blue-600 hover:to-sky-900 shadow-xl;
 }
 
 html {
