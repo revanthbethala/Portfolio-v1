@@ -25,7 +25,7 @@ export default function Particle() {
                   zIndex: -1,
                }}
                options={{
-                  fpsLimit: 200,
+                  fpsLimit: 300,
                   interactivity: {
                      events: {
                         onClick: {
@@ -33,7 +33,7 @@ export default function Particle() {
                            mode: "push",
                         },
                         onHover: {
-                           enable: true,
+                           enable: false,
                            mode: "repulse",
                         },
                         resize: true,
@@ -50,7 +50,7 @@ export default function Particle() {
                   },
                   particles: {
                      color: {
-                        value: "#c8d4df",
+                        value: "#f7f7f7",
                      },
                      links: {
                         distance: 150,
@@ -73,13 +73,13 @@ export default function Particle() {
                            enable: true,
                            area: 800,
                         },
-                        value: 130,
+                        value: 30,
                      },
                      opacity: {
                         value: { min: 0.2, max: 0.88 },
                         animation: {
                            enable: true,
-                           speed: 0.5,
+                           speed: 1,
                            minimumValue: 0.3,
                            sync: true,
                         },

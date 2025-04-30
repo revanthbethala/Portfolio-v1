@@ -8,7 +8,7 @@ function ContactButton({ buttonStyle, children }) {
    return (
       <button
          onClick={handleClick}
-         className={`${buttonStyle} px-3 py-2 rounded-lg font-Inter font-semibold text-base hover:scale-110 transition-all ease-in duration-150 delay-150 border-2`}
+         className={`${buttonStyle} px-3 py-2 font-Inter font-semibold text-base hover:scale-105 transition-all ease-in duration-150 delay-150 border`}
       >
          {children}
       </button>

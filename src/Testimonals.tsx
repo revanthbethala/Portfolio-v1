@@ -17,7 +17,7 @@ const testimonials = [
       text: "Working with He on our group projects was a game changer. His coding skills and creativity brought our ideas to life.",
    },
    {
-      name: "Bethala Revanth",
+      name: "Lohit Sai",
       position: "Fellow Developer",
       text: "He is a talented developer. His work on our mobile app showcased his skill in delivering user-friendly designs.",
    },
@@ -35,17 +35,17 @@ const testimonials = [
 
 const TestimonialCards = () => {
    return (
-      <div className="max-w-6xl mx-auto px-4 py-12">
+      <div className="max-w-6xl mx-auto px-4 py-12 ">
          <h2 className="text-3xl font-bold text-center mb-8">Testimonials</h2>
-         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 ">
             {testimonials.map((testimonial, index) => (
                <div
                   key={index}
-                  className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200"
+                  className="bg-slate-500 bg-opacity-20  p-6 rounded-2xl text-white border border-gray-200"
                >
-                  <p className="text-gray-700 mb-4">"{testimonial.text}"</p>
-                  <h3 className="text-lg font-semibold text-gray-900">{testimonial.name}</h3>
-                  <p className="text-sm text-gray-500">{testimonial.position}</p>
+                  <p className="text-gray-100 mb-4">"{testimonial.text}"</p>
+                  <h3 className="text-lg font-semibold text-gray-300">{testimonial.name}</h3>
+                  <p className="text-sm text-gray-300">{testimonial.position}</p>
                </div>
             ))}
          </div>
