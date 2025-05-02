@@ -24,7 +24,7 @@ export default function AboutMe() {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="space-y-4 text-gray-300 text-lg leading-relaxed"
+            className="space-y-4 text-gray-300 text-lg leading-relaxed font-Inter"
           >
             <p>
               I’m <span className="gradient-heading">Revanth</span>, a Computer

@@ -22,7 +22,7 @@ function Home() {
           whileInView={{ opacity: 1, translateY: 0 }}
           transition={{ ease: "easeIn", duration: 0.6, delay: 0.6 }}
         >
-          <h3 className="md:px-1 md:text-4xl text-2xl font-medium text-center md:leading-relaxed leading-normal font-lora">
+          <h3 className="md:px-1 md:text-4xl text-2xl text-transparent bg-clip-text bg-gradient-to-tr from-gray-300 via-stone-300 to-slate-400 font-semibold text-center md:leading-relaxed leading-normal font-Inter tracking-wide">
             Hello, I am Revanth <br />
             Passionate Front End Developer
           </h3>
