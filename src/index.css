@@ -9,15 +9,17 @@
 }
 
 .heading {
-  @apply text-transparent text-center bg-clip-text bg-gradient-to-tr from-slate-200 to-slate-400 font-bold  text-4xl font-Inter py-2;
+  @apply text-transparent text-center bg-clip-text bg-gradient-to-tr from-slate-200 to-slate-400 font-bold text-3xl md:text-5xl font-Inter py-2;
 }
-
+.gradient-heading{
+  @apply  font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-300;
+}
 .sub-container {
-  @apply px-5 py-3 bg-zinc-500  hover:bg-opacity-25 bg-opacity-30 border-2 border-slate-400 rounded-lg  font-Inter;
+  @apply px-5 py-3 bg-zinc-500 hover:bg-opacity-25 bg-opacity-30 border-2 border-slate-400 rounded-lg  font-Inter;
 }
 
 .skill-style {
-  @apply px-5 py-3 rounded-lg font-lora flex flex-col justify-center items-center  gap-3 cursor-pointer border-[1px] border-blue-600            hover:bg-gradient-to-tl hover:from-blue-600 hover:to-sky-900 shadow-xl;
+  @apply px-5 py-3 rounded-lg flex flex-col justify-center items-center gap-3 shadow-xl bg-gray-600/20 border-gray-500 hover:bg-gray-700/20;
 }
 
 html {

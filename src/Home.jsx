@@ -1,10 +1,4 @@
-import {
-  ArrowDown,
-  Download,
-  Github,
-  Instagram,
-  Linkedin,
-} from "lucide-react";
+import { ArrowDown, Download, Github, Instagram, Linkedin } from "lucide-react";
 import Header from "./Components/Header";
 import { motion } from "motion/react";
 
@@ -18,7 +12,7 @@ function Home() {
     },
   };
   return (
-    <div className="w-full h-screen px-3 md:pt-5 pt-20" id="Home">
+    <div className="w-full h-screen px-3 md:pt-5 pt-20" id="home">
       <Header />
 
       <main className="flex w-full flex-col items-center justify-around md:pt-40 gap-10 pb-28 py-20">
@@ -38,16 +32,15 @@ function Home() {
             user engagement.
           </p>
           <div className="flex flex-row gap-6 items-center mt-4">
-          <a
+            <a
               href="/Revanth.pdf"
               download="Revanth-Resume"
-            className="flex items-center text-sm gap-2 bg-gray-100 font-semibold font-Inter border border-slate-600 text-blue-700 hover:bg-gradient-to-r hover:from-indigo-500 hover:to-blue-600
+              className="flex items-center text-sm gap-2 bg-gray-100 font-semibold font-Inter border border-slate-600 text-blue-700 hover:bg-gradient-to-r hover:from-indigo-500 hover:to-blue-600
                hover:text-white px-5 py-2.5 rounded-full ease-in"
             >
               <Download className="w-5 h-5" />
               Download Resume
             </a>
-
           </div>
         </motion.div>
         <motion.div variants={item} className="flex space-x-4">
@@ -85,15 +78,6 @@ function Home() {
             </a>
           </motion.div>
         </motion.div>
-        <div className="bg-blue-600 p-2 rounded-full font-Inter tracking-wide animate-bounce active:animate-none transition-all ease-in mt-10">
-          <a
-            href="#projects"
-            className="flex gap-2 justify-center items-center"
-          >
-            <ArrowDown className="w-4 h-4" />
-            <p className="text-sm tracking-wide">View My Work</p>
-          </a>
-        </div>
       </main>
     </div>
   );

@@ -1,52 +1,40 @@
 import { motion } from "framer-motion";
-import { GraduationCap, MapPin, Award } from "lucide-react";
+import { GraduationCap, MapPin, Award, TimerIcon, School } from "lucide-react";
 
 export default function Education() {
   const educationData = [
     {
-      degree: "Bachelor of Technology in Computer Science",
-      institution: "Indian Institute of Technology",
-      location: "Mumbai, India",
-      period: "2020 - 2024",
+      degree: "Bachelor of Technology in Computer Science-Data Science",
+      institution: "NRI Institute of Technology",
+      location: "Agiripalli, India",
+      period: "2022 - 2026",
       description:
-        "Specializing in Artificial Intelligence and Machine Learning with a minor in Data Science. Maintained a CGPA of 9.2/10.",
-      achievements: [
-        "Dean's List: All semesters",
-        "Best Project Award",
-        "Technical Lead, Coding Club",
-      ],
+        "Pursuing final year B.Tech in Computer Science specialized in DataScience. Developed a solid foundation in software development, data structures, algorithms, and web technologies.",
+      achievements: ["Current CGPA : 9.2"],
       color: "from-blue-500 to-indigo-500",
       icon: <GraduationCap className="h-5 w-5" />,
     },
     {
       degree: "Higher Secondary Education",
-      institution: "Delhi Public School",
-      location: "Delhi, India",
-      period: "2018 - 2020",
+      institution: "Narayana Junior College",
+      location: "Vuyyuru, India",
+      period: "2020 - 2022",
       description:
-        "Completed with 95% in Science stream with Computer Science as an elective subject.",
-      achievements: [
-        "School Topper in Computer Science",
-        "Science Olympiad Finalist",
-        "Technical Club Secretary",
-      ],
+        "Completed Intermediate education with a focus on Mathematics, Physics, and Chemistry (MPC) which built a strong foundation in analytical thinking and  problem-solving which supported my transition into the field of technology and programming.",
+      achievements: ["Percentage Scored: 96%"],
       color: "from-purple-500 to-pink-500",
       icon: <Award className="h-5 w-5" />,
     },
     {
-      degree: "Secondary Education",
-      institution: "Delhi Public School",
-      location: "Delhi, India",
-      period: "2016 - 2018",
+      degree: "Secondary Education[SSC] ",
+      institution: "A Little Flower The Leader",
+      location: "Vuyyuru, India",
+      period: "2019 - 2020",
       description:
-        "Completed with 92% with distinction in Mathematics and Science.",
-      achievements: [
-        "Mathematics Olympiad Winner",
-        "Best Student Award",
-        "Science Exhibition Gold Medal",
-      ],
+        "Completed Secondary School Education (SSC) in first-class, with a focus on core subjects like Mathematics, Science, and English. Built a strong academic foundation and developed key skills in logical thinking and communication.",
+      achievements: ["Percentage Scored: 95%"],
       color: "from-green-500 to-emerald-500",
-      icon: <Award className="h-5 w-5" />,
+      icon: <School className="h-5 w-5" />,
     },
   ];
 
@@ -60,9 +48,7 @@ export default function Education() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="heading">
-            Academic Journey
-          </h2>
+          <h2 className="heading">Academic Journey</h2>
           <p className="mx-auto mt-4 max-w-[700px] text-muted-foreground md:text-lg">
             My educational background and qualifications that have shaped my
             technical expertise.
@@ -131,6 +117,10 @@ export default function Education() {
                           {item.institution}
                         </div>
                         <div className="flex items-center text-muted-foreground mt-1">
+                          <TimerIcon className="mr-2 h-4 w-4" />
+                          {item.period}
+                        </div>
+                        <div className="flex items-center text-muted-foreground mt-1">
                           <MapPin className="mr-2 h-4 w-4" />
                           {item.location}
                         </div>
@@ -141,7 +131,6 @@ export default function Education() {
                       </p>
 
                       <div className="space-y-2">
-                        <h4 className="font-medium">Key Achievements:</h4>
                         <ul className="space-y-1">
                           {item.achievements.map((achievement, i) => (
                             <motion.li
@@ -153,9 +142,9 @@ export default function Education() {
                                 delay: 0.5 + i * 0.1,
                               }}
                               viewport={{ once: true }}
-                              className="flex items-start"
+                              className="flex items-center "
                             >
-                              <div className="mr-2 mt-1 h-1.5 w-1.5 rounded-full bg-primary flex-shrink-0"></div>
+                              <div className="mr-2 mt-1 h-1.5 w-1.5 rounded-full bg-blue-400 flex-shrink-0"></div>
                               <span>{achievement}</span>
                             </motion.li>
                           ))}
