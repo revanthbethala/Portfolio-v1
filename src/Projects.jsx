@@ -10,7 +10,7 @@ export default function Projects() {
       title: "Shuriken-AI Powered LMS Portal",
       description:
         "Shuriken is an AI-powered LMS that personalizes learning through adaptive content, intelligent assessments, and mock interviews. It tracks student progress and provides real-time performance analytics.",
-      image: weatherio,
+      image: shuriken,
       tags: [
         "React",
         "Node.js",
@@ -26,7 +26,7 @@ export default function Projects() {
       title: "Weather Dashboard",
       description:
         "Developed a weather dashboard that displays real-time weather data, including temperature and humidity. Users can easily check the weather for any location. The interface is intuitive and responsive across devices.",
-      image: shuriken,
+      image:weatherio,
       tags: [
         "React JS",
         "HTML",
